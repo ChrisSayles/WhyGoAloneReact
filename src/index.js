@@ -10,18 +10,20 @@ import Chat from './components/chat';
 
 const App = function(){
     return <div className="container">
-                <div className="row">
+                <div className="row col-sm-12">
                     <Login />
                 </div>
-                <div className="row">
-                    <InterestList />
-                    <Interest />
-                </div>
-                <div className="row">
-                    <Map />
-                </div>
-                <div className="row">
+                <div className="content">
+                    <div className="row col-sm-3">
+                        <InterestList />
+                        <Interest />
+                    </div>
+                    <div className="row col-sm-6">
+                        <Map />
+                    </div>
+                <div className="row col-sm-3">
                     <Chat />
+                </div>
                 </div>
           </div>;
 }

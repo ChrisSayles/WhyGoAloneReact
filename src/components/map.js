@@ -4,7 +4,7 @@ class Map extends Component {
 	render(){
 		return(
 
-			<div className="col-sm-6">
+			<div className="map">
                 <div className="panel panel-default panel-border">
                     <div className="panel-heading">
                         <h4>Your Location</h4>
