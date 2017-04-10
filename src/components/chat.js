@@ -5,8 +5,8 @@ class Chat extends Component {
 		return(
 
 			<div className="panel panel-default panel-border col-sm-12">
-  				<div className="panel-body chatTitle"><h4>CHAT</h4></div>
-  				<div className="panel-body chatBox">CHAT BOX</div>
+  				<h4 className="panel-body chatTitle textStyle">Chat</h4>
+  				<div className="panel-body chatBox textStyle">Chat Box</div>
 			</div>
 			)
 	}
