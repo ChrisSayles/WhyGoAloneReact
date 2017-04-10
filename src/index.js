@@ -10,24 +10,36 @@ import Chat from './components/chat';
 
 const App = function(){
     return <div className="container">
-                <div className="row col-sm-12">
-                    <Login />
+
+                <div className="row">
+                        <div className="col-md-12">
+                             <Login />
+                        </div>
                 </div>
-                <div className="content">
-                    <div className="row col-sm-3">
-                        <InterestList />
-                        <Interest />
-                    </div>
-                    <div className="row col-sm-6">
-                        <Map />
-                    </div>
-                <div className="row col-sm-3">
-                    <Chat />
+                <div className="row">
+                        <div className="col-md-4">
+                            <div class="row">
+                                <div className="col-md-12">
+                                    <InterestList />
+                                </div>
+                                <div className="col-md-12">
+                                    <Interest />
+                                </div>
+                                </div>
+                            </div>
+                        <div className="col-md-4">
+                            <Map />
+                        </div>
+                        <div className="col-md-4">
+                            <Chat />
+                        </div>
                 </div>
-                </div>
-          </div>;
+
+        
+            </div>;
 }
 
+ 
 
 
 ReactDOM.render( < App / > , document.querySelector('.container'));
