@@ -6,11 +6,10 @@ import InterestList from './components/interestList';
 import Login from './components/login';
 import Map from './components/map';
 import Chat from './components/chat';
-
+import Footer from './components/footer';
 
 const App = function(){
-    return <div className="container">
-
+    return <div className="container-fluid">
                 <div className="row">
                         <div className="col-md-12">
                              <Login />
@@ -18,7 +17,7 @@ const App = function(){
                 </div>
                 <div className="row">
                         <div className="col-md-4">
-                            <div class="row">
+                            <div className="row">
                                 <div className="col-md-12">
                                     <InterestList />
                                 </div>
@@ -32,6 +31,9 @@ const App = function(){
                         </div>
                         <div className="col-md-4">
                             <Chat />
+                        </div>
+                        <div>
+                            <Footer />
                         </div>
                 </div>
 

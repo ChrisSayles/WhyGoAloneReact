@@ -5,8 +5,8 @@ class InterestList extends Component {
 		return(
 
 			<div className="panel panel-default panel-border col-sm-12">
-  				<div className="panel-body interestTopTitle">What are you interested in?</div>
-  				<div className="panel-body interestTopList">Bowling</div>
+  				<h4 className="panel-body interestTopTitle textStyle">What are you interested in?</h4>
+  				<div className="panel-body interestTopList textStyle">Bowling</div>
 			</div>
 			)
 	}

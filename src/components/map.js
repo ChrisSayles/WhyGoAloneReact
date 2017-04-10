@@ -6,12 +6,12 @@ class Map extends Component {
 
             <div className="col-sm-12">
                 <div className="panel panel-default panel-border col-sm-12">
-                    <div className="panel-heading locationTitle">
-                        <h4>Your Location</h4>
-                    </div>
+                    <h4 className="panel-heading locationTitle textStyle">
+                        Your Location
+                    </h4>
                     <div className="panel-body">
-                        <div className="panel-body gmaps">
-                            <p>Click on an interest to find things to do with people near you!</p>
+                        <div className="panel-body gmaps textStyle">
+                            <div className="image"></div>​
                         </div>
                     </div>
                 </div>
