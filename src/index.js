@@ -11,7 +11,7 @@ import Footer from './components/footer';
 const App = function(){
     return <div className="container-fluid">
                 <div className="row">
-                        <div className="col-md-12">
+                        <div className="header">
                              <Login />
                         </div>
                 </div>
@@ -21,7 +21,7 @@ const App = function(){
                                 <div className="col-md-12">
                                     <InterestList />
                                 </div>
-                                <div className="col-md-12">
+                                <div className="col-md-12 ">
                                     <Interest />
                                 </div>
                                 </div>

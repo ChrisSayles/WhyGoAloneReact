@@ -5,8 +5,8 @@ class Map extends Component {
         return(
 
             <div className="col-sm-12">
-                <div className="panel panel-default panel-border col-sm-12">
-                    <h4 className="panel-heading locationTitle textStyle">
+                <div className="panel panel-default panel-border">
+                    <h4 className="panel-heading heading-area textStyle">
                         Your Location
                     </h4>
                     <div className="panel-body">
