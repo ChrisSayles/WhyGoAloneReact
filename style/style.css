@@ -14,14 +14,18 @@
 .pizzaLogo{
 	content: url("pizzalogo.png");
 	height: 40%;
-	width: 40%;
+	width: 38%;
 	float: left;
-	/*height: 140px;
-	display: inline-block;*/
-}
+	margin-left:25px;
+	position: relative;
+top: 50%;
+transform: translateY(-50%); 
+display: inline-block;
+vertical-align: middle;
+	}
 
 .panel-heading{
-	padding: 10px 15px;
+/*	padding: 10px 15px;*/
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -38,6 +42,8 @@
 	background-color: #fe5d26;
 	font-weight: bold;
 	padding: 1%;
+
+
 }
 .iconSize { 
 	font-size: 21px; 
@@ -65,11 +71,16 @@
 	margin: 10px;
 	border-radius: 10px;
 	margin-top: 40px;
+	background:white;
 
 }
 
+.bodyBackground {
+	background-color: white;
+}
+
 div.image {
-   content:url("gmap.jpg");
+   content:url("https://media.giphy.com/media/I96LNQzLjKnkI/giphy.gif");
     max-width:100%; 
   max-height:100%;
   margin:auto;
@@ -129,13 +140,16 @@ div.image {
 	background: black;
 	color: white;
 	text-align: center;
-	height: 12%;
+	height: 5%;
 	border-top-color: #fe5d26;
     border-top-style: solid;
 }
 
 .logoArea{
 	max-width: 3000px;
+	height:187px;
+	text-align: center;
+vertical-align: middle;
 
 }
 
@@ -157,10 +171,12 @@ h2{
 h4{
 	color: white;
 	font-family: 'Gloria Hallelujah', cursive;
+	margin:0;
+	width:100%;
 }
 
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
    padding: 20px;
-  background-color: #cfcfea;
+  background-image: url("background.jpg");
 }
