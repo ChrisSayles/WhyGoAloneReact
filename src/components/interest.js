@@ -24,10 +24,11 @@ class Interest extends Component {
                         <form id="interestForm">
                           <div className="form-group bodyBackground ">
                             <label>
-                              InterestInput:
-                              <input type="text" id="interestInput" class="form-control" placeholder="e.g. Shopping, Karaoke"/>
+                              Enter your Interests:
+                              <input type="text" id="interestInput" className="form-control formStyle" placeholder="e.g. Shopping, Karaoke"/>
                               
-                              <input id="addInterest" type="submit" class="btn btn-primary" value="Add"/>
+                              <input id="addInterest" type="submit" className="btn btn-primary interestButton" value="Add"/>
+                            
 
 
                             </label>
