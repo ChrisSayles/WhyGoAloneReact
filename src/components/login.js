@@ -5,7 +5,7 @@ class Login extends Component {
 		return(
 			
 			
-			<div className="container-fluid">
+			<div className="header">
 			<div className="panel panel-default headerBackground logoArea ">
 				<div className="pizzaLogo"></div>
 				<div>
@@ -15,6 +15,7 @@ class Login extends Component {
 				</div>
 			</div>
 			</div>
+	
 
 
 
