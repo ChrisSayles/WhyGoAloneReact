@@ -5,7 +5,7 @@ class Login extends Component {
 		return(
 			
 			
-			<div className="header">
+			<div className="header headerBackground">
 			<div className="panel panel-default headerBackground logoArea ">
 				<div className="pizzaLogo"></div>
 				<div>
