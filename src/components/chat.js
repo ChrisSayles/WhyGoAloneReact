@@ -6,7 +6,7 @@ class Chat extends Component {
 
 			<div className="panel panel-default panel-border">
   				<h4 className="panel-body heading-area textStyle">Chat</h4>
-  				<div className="panel-body chatBox textStyle">Chat Box</div>
+  				<div className="panel-body chatBox"></div>
 			</div>
 			)
 	}
