@@ -5,7 +5,7 @@ class Map extends Component {
         return(
 
             <div className="col-sm-12">
-                <div className="panel panel-default panel-border">
+                <div className="panel panel-default panel-border mapBoxHeight">
                     <h4 className="panel-heading heading-area textStyle">
                         Your Location
                     </h4>

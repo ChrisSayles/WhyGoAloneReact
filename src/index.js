@@ -16,7 +16,7 @@ const App = function(){
                         </div>
                 </div>
                 <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <div className="row">
                                 <div className="col-md-12">
                                     <InterestList />
@@ -26,10 +26,10 @@ const App = function(){
                                 </div>
                                 </div>
                             </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6">
                             <Map />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <Chat />
                         </div>
                         <div>

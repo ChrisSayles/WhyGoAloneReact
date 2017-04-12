@@ -3,6 +3,7 @@
 	width:100%;
 	overflow: hidden;
 	display: inline-block;
+	margin-top: -40px;
 
 }
 
@@ -13,8 +14,8 @@
 
 .pizzaLogo{
 	content: url("pizzalogo.png");
-	height: 40%;
-	width: 38%;
+	height: 90%;
+	width: 58%;
 	float: left;
 	margin-left:25px;
 	position: relative;
@@ -31,11 +32,6 @@ vertical-align: middle;
     border-top-right-radius: 3px;
 }
 
-.panel-border{
-	border-color: #fe8f02;
-	border-width: 4px;
-	box-shadow: 3px 5px 15px 2px black;
-}
 
 .loginButton{
 	float:right;
@@ -43,8 +39,16 @@ vertical-align: middle;
 	background-color: #fe5d26;
 	font-weight: bold;
 	padding: 1%;
+}
 
-
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    float: right;
+    width: 16%;
+    padding-right: 11%;
+    display: inline-block;
 }
 .iconSize { 
 	font-size: 21px; 
@@ -66,6 +70,10 @@ vertical-align: middle;
 	height: 167px;
 }
 
+.mapBoxHeight{
+	height:500px;
+}
+
 .panel-border{
 	border-style: solid;
 	border-color: black;
@@ -73,7 +81,9 @@ vertical-align: middle;
 	border-radius: 10px;
 	margin-top: 40px;
 	background:white;
-
+    overflow: auto;
+	border-width: 4px;
+	box-shadow: 3px 5px 15px 2px black;
 }
 
 .bodyBackground {
@@ -81,12 +91,15 @@ vertical-align: middle;
 }
 
 div.image {
-   content:url("https://media.giphy.com/media/I96LNQzLjKnkI/giphy.gif");
-    max-width:100%; 
-  max-height:100%;
-  margin:auto;
-  display:block;
-  height: 385px;
+   content: url(https://media.giphy.com/media/I96LNQzLjKnkI/giphy.gif);
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    height: 100%;
+    background-size: cover;
+    width: 95%;
+    margin-top: 3%;
 }​
 
 
@@ -103,9 +116,10 @@ div.image {
 
 .formStyle{
 	background-color: #F6F6F6;
-	    width: 100%;
-    display: -webkit-inline-box;
+    width: 80%;
+    display: inline-block;
     text-align: center;
+    float: left;
 }
 
 .locationTitle {
@@ -148,16 +162,17 @@ div.image {
 	background: black;
 	color: white;
 	text-align: center;
-	height: 5%;
+	height: 8%;
 	border-top-color: #fe5d26;
     border-top-style: solid;
 }
 
 .logoArea{
 	max-width: 3000px;
-	height:187px;
+	height:160px;
 	text-align: center;
-vertical-align: middle;
+    vertical-align: middle;
+	margin-bottom: 40;
 
 }
 
