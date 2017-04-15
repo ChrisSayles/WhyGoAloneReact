@@ -1,7 +1,8 @@
-//TODO create utils folder, put my post request in there but make it a promise. put a get request in the utils too.
-//chain the get request off my post request, and create message component to display them
+//TODO put my post request in utils folder but make it a promise. put a get request in the utils too.
+//chain the get request off my post request, and fix message component to display them
 
 import React, { Component } from 'react';
+import Message from './message';
 
 class Chat extends Component {
 
@@ -10,6 +11,23 @@ class Chat extends Component {
 		this.state = {message: ' '};
 		this.handleMessageChange = this.handleMessageChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.showMessages = this.showMessages.bind(this);
+	}
+
+
+	componentDidUpdate() {
+		if(!this.state.messages){
+			helpers.fetchMessages().then(function(data){
+				this.setState({messages: data});
+			}.bind(this));
+		}
+	}
+
+	showMessages(){
+		if(this.props.messages){
+			return this.props.messages.map((x, i) => <Message key={i} body={x.body} date={x.date}/>);
+		}
+		return "Messages will be displayed here."
 	}
 
 	handleMessageChange(event){
@@ -49,6 +67,7 @@ class Chat extends Component {
 			<div className="panel panel-default panel-border">
   				<h4 className="panel-heading heading-area textStyle">Chat</h4>
   				<div className="panel-body chatBox">
+  				  <div>{this.showMessages()}</div>
   				  <form onSubmit={(event) => {event.preventDefault(); this.handleSubmit();}}>
 		            <div className="form-group">
 		              <label htmlFor="message">message</label>
