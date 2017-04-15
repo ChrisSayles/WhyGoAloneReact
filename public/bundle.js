@@ -53,6 +53,8 @@
 
 	'use strict';
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -87,58 +89,88 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var App = function App() {
-	    return _react2.default.createElement(
-	        'div',
-	        { className: 'container-fluid' },
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement(
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var App = function (_Component) {
+	    _inherits(App, _Component);
+
+	    function App() {
+	        _classCallCheck(this, App);
+
+	        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+	        _this.setMessage = _this.setMessage.bind(_this);
+
+	        return _this;
+	    }
+
+	    _createClass(App, [{
+	        key: 'setMessage',
+	        value: function setMessage(message) {
+	            this.setState({ message: message });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
 	                'div',
-	                { className: 'header' },
-	                _react2.default.createElement(_login2.default, null)
-	            )
-	        ),
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-3' },
+	                { className: 'container-fluid' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'row' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-12' },
-	                        _react2.default.createElement(_interestList2.default, null)
+	                        { className: 'header' },
+	                        _react2.default.createElement(_login2.default, null)
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-3' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-12' },
+	                                _react2.default.createElement(_interestList2.default, null)
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-12 ' },
+	                                _react2.default.createElement(_interest2.default, null)
+	                            )
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-12 ' },
-	                        _react2.default.createElement(_interest2.default, null)
+	                        { className: 'col-md-6' },
+	                        _react2.default.createElement(_map2.default, null)
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-md-3' },
+	                        _react2.default.createElement(_chat2.default, { setMessage: this.setMessage })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(_footer2.default, null)
 	                    )
 	                )
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-6' },
-	                _react2.default.createElement(_map2.default, null)
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-3' },
-	                _react2.default.createElement(_chat2.default, null)
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(_footer2.default, null)
-	            )
-	        )
-	    );
-	};
+	            );
+	        }
+	    }]);
+
+	    return App;
+	}(_react.Component);
 
 	_reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector('.container'));
 
@@ -20120,7 +20152,7 @@
 /* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -20138,7 +20170,8 @@
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //TODO create utils folder, put my post request in there but make it a promise. put a get request in the utils too.
+	//chain the get request off my post request, and create message component to display them
 
 	var Chat = function (_Component) {
 		_inherits(Chat, _Component);
@@ -20146,54 +20179,83 @@
 		function Chat() {
 			_classCallCheck(this, Chat);
 
-			return _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).apply(this, arguments));
+			var _this = _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).call(this));
+
+			_this.state = { message: ' ' };
+			_this.handleMessageChange = _this.handleMessageChange.bind(_this);
+			_this.handleSubmit = _this.handleSubmit.bind(_this);
+			return _this;
 		}
 
 		_createClass(Chat, [{
-			key: "handleMessageChange",
+			key: 'handleMessageChange',
 			value: function handleMessageChange(event) {
 				this.setState({ message: event.target.value });
 			}
 		}, {
-			key: "handleSubmit",
+			key: 'handleSubmit',
 			value: function handleSubmit() {
 				this.props.setMessage(this.state.message);
+
+				var body = JSON.stringify({ message: this.state.message });
+
+				var myInit = {
+					method: "POST",
+					headers: {
+						'Accept': 'application/json',
+						'Content-Type': 'application/json'
+					},
+					body: body
+				};
+
+				var messagePostRequest = new Request("/newMessage", myInit);
+
+				fetch(messagePostRequest).then(function (response) {
+					return response.json();
+				}).then(function (responseData) {
+					console.log("responseData: " + responseData);
+					return responseData;
+				}).catch(function (err) {
+					return console.log(err);
+				});
+
+				this.setState({ message: '' });
 			}
 		}, {
-			key: "render",
+			key: 'render',
 			value: function render() {
 				var _this2 = this;
 
 				return _react2.default.createElement(
-					"div",
-					{ className: "panel panel-default panel-border" },
+					'div',
+					{ className: 'panel panel-default panel-border' },
 					_react2.default.createElement(
-						"h4",
-						{ className: "panel-heading heading-area textStyle" },
-						"Chat"
+						'h4',
+						{ className: 'panel-heading heading-area textStyle' },
+						'Chat'
 					),
 					_react2.default.createElement(
-						"div",
-						{ className: "panel-body chatBox" },
+						'div',
+						{ className: 'panel-body chatBox' },
 						_react2.default.createElement(
-							"form",
+							'form',
 							{ onSubmit: function onSubmit(event) {
 									event.preventDefault();_this2.handleSubmit();
 								} },
 							_react2.default.createElement(
-								"div",
-								{ className: "form-group" },
+								'div',
+								{ className: 'form-group' },
 								_react2.default.createElement(
-									"label",
-									{ htmlFor: "message" },
-									"message"
+									'label',
+									{ htmlFor: 'message' },
+									'message'
 								),
-								_react2.default.createElement("input", { value: this.state.message, onChange: this.handleMessageChange, className: "form-control", id: "message", placeholder: "message" })
+								_react2.default.createElement('input', { value: this.state.message, onChange: this.handleMessageChange, className: 'form-control', id: 'message', placeholder: '' })
 							),
 							_react2.default.createElement(
-								"button",
-								{ type: "submit", className: "btn btn-default" },
-								"Send"
+								'button',
+								{ type: 'submit', className: 'btn btn-default' },
+								'Send'
 							)
 						)
 					)

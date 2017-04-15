@@ -25,10 +25,10 @@
 	float: left;
 	margin-left:25px;
 	position: relative;
-top: 50%;
-transform: translateY(-50%); 
-display: inline-block;
-vertical-align: middle;
+	top: 50%;
+	transform: translateY(-50%); 
+	display: inline-block;
+	vertical-align: middle;
 	}
 
 .panel-heading{
@@ -148,9 +148,16 @@ div.image {
 }
 
 .chatBox {
-	
+	position: relative;
 	height: 400px;
 
+}
+
+
+.chatBox form {
+	position: absolute;
+	bottom: 10px;
+	margin-left: 10px;
 }
 
 .textStyle{
