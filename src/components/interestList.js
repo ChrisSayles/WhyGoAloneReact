@@ -6,7 +6,7 @@ class InterestList extends Component {
 
 			<div className="panel panel-default panel-border" id="btnBox">
   					<h4 className="panel-heading heading-area textStyle">
-  						What are you interested in?
+  						Your Interests 
   					</h4>
   					<div className="panel-body interestTopList textStyle">
 

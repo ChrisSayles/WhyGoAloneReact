@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 class Interest extends Component {
-	render(){
-		return(
+
+  render(){
+	return(
 
 			// <div className="panel panel-default panel-border col-sm-12">
   	// 			<div className="panel-body interestBottomTitle textStyle heading-area">Name your Interest</div>
@@ -18,13 +19,13 @@ class Interest extends Component {
   //     </div>
 <div className="panel panel-default panel-border">
         <div className="panel-heading heading-area textStyl" id="headingArea">
-                        <h4 className="textStyle"> Name your interest</h4>
+                        <h4 className="textStyle"> Name your activity</h4>
         </div>
         <div className="panel-body">
                         <form id="interestForm">
                           <div className="form-group bodyBackground ">
                             <label>
-                              Enter your Interests:
+                              Add an interest:
                               <input type="text" id="interestInput" className="form-control formStyle" placeholder="e.g. Shopping, Karaoke"/>
                               
                               <input id="addInterest" type="submit" className="btn btn-primary interestButton" value="Add"/>
@@ -37,9 +38,9 @@ class Interest extends Component {
                         <div className="currentCount"></div>
         </div>
                
-</div>		
-    	)
-	}
+</div>    
+      )
+  }
 }
              
 

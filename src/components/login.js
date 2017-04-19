@@ -6,16 +6,20 @@ class Login extends Component {
 			
 			
 			<div className="header headerBackground">
-			<div className="panel panel-default headerBackground logoArea ">
+			<div className="navbar navbar-default headerBackground logoArea ">
+				
+
+
 				<div className="pizzaLogo"></div>
 				<div>
 				<button className="loginButton mdl-button mdl-js-button mdl-js-ripple-effect">
   				<i className="material-icons iconSize loginButton">account_circle</i>Sign-in with Google
 				</button>
 				</div>
+			    
 			</div>
 			</div>
-	
+		
 
 
 
