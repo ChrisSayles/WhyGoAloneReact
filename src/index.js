@@ -9,12 +9,12 @@ import Chat from './components/chat';
 import Footer from './components/footer';
 
 const App = function(){
-    return <div className="container-fluid">
-                <div className="row">
-                        <div className="header">
+    return <div>
+                
                              <Login />
-                        </div>
-                </div>
+                       
+                
+                <div className="container">
                 <div className="row">
                         <div className="col-md-3">
                             <div className="row">
@@ -32,11 +32,14 @@ const App = function(){
                         <div className="col-md-3">
                             <Chat />
                         </div>
-                        <div>
+                        
+                </div>
+                </div>
+                 <div className="row">
+                                <div className="col-md-12">
                             <Footer />
                         </div>
                 </div>
-
         
             </div>;
 }
@@ -44,4 +47,4 @@ const App = function(){
  
 
 
-ReactDOM.render( < App / > , document.querySelector('.container'));
+ReactDOM.render( < App / > , document.querySelector('.root'));
