@@ -5,25 +5,13 @@ class Interest extends Component {
   render(){
 	return(
 
-			// <div className="panel panel-default panel-border col-sm-12">
-  	// 			<div className="panel-body interestBottomTitle textStyle heading-area">Name your Interest</div>
-  	// 			<div className="panel-body interestBottomField textStyle">Input Field</div>
-			// </div>
-		// <div className="panel panel-default panel-border col-sm-12">
-  //       <div className="panel-body-search">
-  //         <h4 className="text-center interestTopTitle panel-heading textStyle"><strong>Name your interests</strong></h4>
-  //       </div>
-  //       <div className="panel-body textStyle">
-  //        test
-  //       </div>
-  //     </div>
-<div className="panel panel-default panel-border">
-        <div className="panel-heading heading-area textStyl" id="headingArea">
+<div className="panel panel-default panel-border bottom">
+        <div className="panel-heading heading-area textStyle" id="headingArea">
                         <h4 className="textStyle"> Name your activity</h4>
         </div>
-        <div className="panel-body">
+        <div className="panel-body interestTopList textStyle">
                         <form id="interestForm">
-                          <div className="form-group bodyBackground ">
+                          <div className="form-group">
                             <label>
                               Add an interest:
                               <input type="text" id="interestInput" className="form-control formStyle" placeholder="e.g. Shopping, Karaoke"/>
@@ -43,6 +31,5 @@ class Interest extends Component {
   }
 }
              
-
 
 export default Interest;

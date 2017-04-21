@@ -4,7 +4,7 @@ class InterestList extends Component {
 	render(){
 		return(
 
-			<div className="panel panel-default panel-border" id="btnBox">
+			<div className="panel panel-default panel-border bottom">
   					<h4 className="panel-heading heading-area textStyle">
   						Your Interests 
   					</h4>

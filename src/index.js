@@ -32,10 +32,13 @@ const App = function(){
                         <div className="col-md-3">
                             <Chat />
                         </div>
-                        <div>
+                        
+                </div>
+                </div>
+                 <div className="row">
+                                <div className="col-md-12">
                             <Footer />
                         </div>
-                </div>
                 </div>
         
             </div>;
