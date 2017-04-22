@@ -211,15 +211,12 @@
 }
 
 .footer{
-	
+	padding-top:50px;
 
 }
 
 .footerStyle{
-	/*background-color: #fe5d26;*/
-	  
-   
-    
+	/*background-color: #fe5d26;*/ 
 	color: white;
 	text-align: center;
 	height: 30px;

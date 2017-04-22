@@ -10,12 +10,9 @@ import Footer from './components/footer';
 
 const App = function(){
     return <div>
-                
-                             <Login />
-                       
-                
+                <Login />
                 <div className="container">
-                <div className="row">
+                    <div className="row">
                         <div className="col-md-3">
                             <div className="row">
                                 <div className="col-md-12">
@@ -31,16 +28,16 @@ const App = function(){
                         </div>
                         <div className="col-md-3">
                             <Chat />
-                        </div>
-                        
+                        </div>       
+                    </div>
                 </div>
-                </div>
-                 <div className="row">
-                                <div className="col-md-12">
+                <div className="footer">
+                    <div className="row">
+                        <div className="col-md-12">
                             <Footer />
                         </div>
+                    </div>
                 </div>
-        
             </div>;
 }
 
