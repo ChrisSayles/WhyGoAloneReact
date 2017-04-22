@@ -10,10 +10,10 @@ import Footer from './components/footer';
 
 const App = function(){
     return <div>
-                
+
                              <Login />
-                       
-                
+
+
                 <div className="container">
                 <div className="row">
                         <div className="col-md-3">
@@ -32,7 +32,7 @@ const App = function(){
                         <div className="col-md-3">
                             <Chat />
                         </div>
-                        
+
                 </div>
                 </div>
                  <div className="row">
@@ -40,11 +40,11 @@ const App = function(){
                             <Footer />
                         </div>
                 </div>
-        
+
             </div>;
 }
 
- 
+
 
 
 ReactDOM.render( < App / > , document.querySelector('.root'));
