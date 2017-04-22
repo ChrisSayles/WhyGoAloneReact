@@ -4,8 +4,8 @@ class Footer extends Component {
 	render(){
 		return(
 			
-		<div className="footer footerStyle">
-            <div className="container-fluid">
+		<div className="footerStyle">
+            <div>
                 <a>@ Copyright 2017 whygoalone.com</a>
             </div>
         </div>
