@@ -37,15 +37,15 @@ class Chat extends Component {
 			<div className="panel panel-default panel-border bottom">
   				<h4 className="panel-heading heading-area textStyle">Chat</h4>
   				<div className="panel-body chatBox">
-  				  <div>{this.showMessages()}</div>
+  					<div>{this.showMessages()}</div>
   				</div>
-  				  <form id="chat-form" onSubmit={(event) => {event.preventDefault(); this.handleSubmit();}}>
+  				<form id="chat-form" onSubmit={(event) => {event.preventDefault(); this.handleSubmit();}}>
 		            <div className="form-group">
 		              <label htmlFor="message">message</label>
 		              <input value={this.state.message} onChange={this.handleMessageChange} className="form-control" id="message" placeholder="" />
 		            </div>
 		       	    <button type="submit" className="btn btn-default">Send</button>
-			      </form>
+			    </form>
 			</div>
 			)
 	}
