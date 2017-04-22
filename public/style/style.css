@@ -193,11 +193,15 @@
 }
 
 .chatBox {
-	
+	position: relative;
 	height: 480px;
-
+	overflow: scroll;
+	margin-left: 10px;
 }
 
+#chat-form {
+	margin: 10px 10px 10px 10px;
+}
 .textStyle{
 	color: white;
 	font-family: 'Gloria Hallelujah', cursive;
