@@ -9,26 +9,9 @@ import Chat from './components/chat';
 import Footer from './components/footer';
 import helpers from './utils/helpers.js';
 
-<<<<<<< HEAD
-const App = function(){
-    return <div>
 
-                             <Login />
-
-
-                <div className="container">
-                <div className="row">
-                        <div className="col-md-3">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <InterestList />
-                                </div>
-                                <div className="col-md-12 ">
-                                    <Interest />
-                                </div>
-=======
 class App extends Component {
-    
+
     constructor(){
         super();
 
@@ -50,10 +33,10 @@ class App extends Component {
 
     render() {
         return <div>
-                
+
                              <Login />
-                       
-                
+
+
                     <div className="container">
                     <div className="row">
                             <div className="col-md-3">
@@ -65,7 +48,7 @@ class App extends Component {
                                         <Interest />
                                     </div>
                                     </div>
->>>>>>> master
+
                                 </div>
                             <div className="col-md-6">
                                 <Map />
@@ -73,36 +56,19 @@ class App extends Component {
                             <div className="col-md-3">
                                 <Chat setMessage={this.setMessage} messages={this.state.messages}/>
                             </div>
-                            
+
                     </div>
                     </div>
                      <div className="row">
                                     <div className="col-md-12">
                                 <Footer />
                             </div>
-<<<<<<< HEAD
-                        <div className="col-md-6">
-                            <Map />
-                        </div>
-                        <div className="col-md-3">
-                            <Chat />
-                        </div>
 
-                </div>
-                </div>
-                 <div className="row">
-                                <div className="col-md-12">
-                            <Footer />
-                        </div>
-                </div>
-
-            </div>;
-=======
                     </div>
-        
+
                 </div>;
     }
->>>>>>> master
+
 }
 
 
