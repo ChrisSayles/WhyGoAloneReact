@@ -8,7 +8,7 @@ class Message extends Component {
 	render(){
 		return (
 			<div className="panel panel-default">
-				<strong>{this.props.message}</strong>
+				<strong>{this.props.body}</strong>
 				<p>{this.props.date}</p>
 			</div>
 		)

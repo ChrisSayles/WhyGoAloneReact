@@ -19,22 +19,18 @@ module.exports = function(router) {
 		    }
 		    else {
 		      console.log("Success");
-		      res.send("Saved Message");
+		      res.json({"Saved Message": true});
 		    }
 		});
     });
 
     router.get("/lastTwentyMessages", function(req, res){
-
-    	// function find(cb)
-	    	Message.find()
-	    		.sort({_id:-1})
-	    		.limit(20)
-	    		.exec(function(err, doc) {
-			        res.json(doc);
-	      		});
-
-	      	// cb(doc);
-
+    	console.log('lastTwentyMessages route was hit')
+		Message.find()
+			.sort({_id:-1})
+			.limit(20)
+			.exec(function(err, doc) {
+		        res.json(doc);
+	  		});
     });
 }

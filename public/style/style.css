@@ -149,15 +149,13 @@ div.image {
 
 .chatBox {
 	position: relative;
-	height: 400px;
-
+	height: 300px;
+	overflow: scroll;
+	margin-left: 10px;
 }
 
-
-.chatBox form {
-	position: absolute;
-	bottom: 10px;
-	margin-left: 10px;
+#chat-form {
+	margin: 10px 10px 10px 10px;
 }
 
 .textStyle{
