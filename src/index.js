@@ -10,6 +10,7 @@ import Footer from './components/footer';
 import helpers from './utils/helpers.js';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const App = function(){
     return <div>
                 <Login />
@@ -24,8 +25,11 @@ const App = function(){
                                     <Interest />
                                 </div>
 =======
+=======
+
+>>>>>>> master
 class App extends Component {
-    
+
     constructor(){
         super();
 
@@ -47,10 +51,10 @@ class App extends Component {
 
     render() {
         return <div>
-                
+
                              <Login />
-                       
-                
+
+
                     <div className="container">
                     <div className="row">
                             <div className="col-md-3">
@@ -62,6 +66,10 @@ class App extends Component {
                                         <Interest />
                                     </div>
                                     </div>
+<<<<<<< HEAD
+>>>>>>> master
+=======
+
 >>>>>>> master
                                 </div>
                             <div className="col-md-6">
@@ -70,13 +78,14 @@ class App extends Component {
                             <div className="col-md-3">
                                 <Chat setMessage={this.setMessage} messages={this.state.messages}/>
                             </div>
-                            
+
                     </div>
                     </div>
                      <div className="row">
                                     <div className="col-md-12">
                                 <Footer />
                             </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <div className="col-md-6">
                             <Map />
@@ -95,14 +104,21 @@ class App extends Component {
                 </div>
             </div>;
 =======
+=======
+
+>>>>>>> master
                     </div>
-        
+
                 </div>;
     }
+<<<<<<< HEAD
+>>>>>>> master
+=======
+
 >>>>>>> master
 }
 
- 
+
 
 
 ReactDOM.render( < App / > , document.querySelector('.root'));
