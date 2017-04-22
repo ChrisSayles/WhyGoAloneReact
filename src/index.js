@@ -7,7 +7,12 @@ import Login from './components/login';
 import Map from './components/map';
 import Chat from './components/chat';
 import Footer from './components/footer';
+<<<<<<< HEAD
+import Filters from './components/filters';
+import Slider from './components/slider';
+=======
 import helpers from './utils/helpers.js';
+>>>>>>> master
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +29,10 @@ const App = function(){
                                 <div className="col-md-12 ">
                                     <Interest />
                                 </div>
+<<<<<<< HEAD
+                                <div className="col-md-12 ">
+                                    <Filters />
+=======
 =======
 =======
 
@@ -71,6 +80,7 @@ class App extends Component {
 =======
 
 >>>>>>> master
+>>>>>>> master
                                 </div>
                             <div className="col-md-6">
                                 <Map />
@@ -78,6 +88,9 @@ class App extends Component {
                             <div className="col-md-3">
                                 <Chat setMessage={this.setMessage} messages={this.state.messages}/>
                             </div>
+<<<<<<< HEAD
+                        </div>
+=======
 
                     </div>
                     </div>
@@ -87,6 +100,7 @@ class App extends Component {
                             </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> master
                         <div className="col-md-6">
                             <Map />
                         </div>
