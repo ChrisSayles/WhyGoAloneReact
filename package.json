@@ -27,13 +27,8 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-<<<<<<< HEAD
-    "bootstrap": "^3.3.7",
-    "lodash": "^3.10.1",
-    "react": "^15.5.4",
     "react-bootstrap-slider": "^1.1.7",
-    "react-dom": "^15.5.4",
-=======
+    "bootstrap": "^3.3.7",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-stormpath": "^3.2.0",
@@ -41,7 +36,6 @@
     "mongoose": "^4.9.5",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
->>>>>>> master
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
