@@ -1,15 +1,15 @@
 .headerBackground{
-	background-color: #fe5d26;
+	/*background-color: #fe5d26;*/
 /*	background-image: url('orangebackground.jpg');*/
 	text-align: center;
 	box-shadow: 3px 5px 15px 2px grey;
 	width:100%;
-	background: rgba(254, 93, 38, 0.5);
+	background: rgba(255, 153, 0, 0.6);
 	/*
     filter: alpha(opacity=50); /* For IE8 and earlier */
 	/*overflow: hidden;
 	display: inline-block;
-	margin-top: 0px;*/
+	margin-top: 0px;adding comment*/
 	/*background-size: cover;*/
 }
 
@@ -49,6 +49,7 @@
 	height: 5%;
 /*	border-top-color: #fe5d26;
     border-top-style: solid;*/
+    
     background: rgba(254, 93, 38, 0.7);
 }
 .panel-heading{
@@ -215,21 +216,25 @@
 }
 
 .footer{
-	
+	padding-top:50px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
 }
 
 .footerStyle{
-	/*background-color: #fe5d26;*/
-	  
-   
-    
+	/*background-color: #fe5d26;*/ 
+	background-color: rgba(254, 93, 38, 0.6);
 	color: white;
 	text-align: center;
 	height: 30px;
 /*	border-top-color: #fe5d26;
     border-top-style: solid;*/
-    background: rgba(254, 93, 38, 0.7);
+    
+
     /*filter: alpha(opacity=50);*/
 }
 
@@ -298,8 +303,8 @@ html, body {
    /*padding: 20px;*/
 	
   /* background-color: #cfcfea;*/
-  background-image: url("NewPattern.png");
-  background-size: 120%
+  background-image: url("light-pattern.png");
+  background-size: 100%
 
 
 
