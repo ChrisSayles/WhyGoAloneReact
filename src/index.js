@@ -7,6 +7,8 @@ import Login from './components/login';
 import Map from './components/map';
 import Chat from './components/chat';
 import Footer from './components/footer';
+import Filters from './components/filters';
+import Slider from './components/slider';
 
 const App = function(){
     return <div className="container-fluid">
@@ -24,8 +26,11 @@ const App = function(){
                                 <div className="col-md-12 ">
                                     <Interest />
                                 </div>
+                                <div className="col-md-12 ">
+                                    <Filters />
                                 </div>
                             </div>
+                        </div>
                         <div className="col-md-6">
                             <Map />
                         </div>
