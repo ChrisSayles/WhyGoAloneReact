@@ -7,27 +7,11 @@ import Login from './components/login';
 import Map from './components/map';
 import Chat from './components/chat';
 import Footer from './components/footer';
+import Filters from './components/filters';
+import Slider from './components/slider';
 import helpers from './utils/helpers.js';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const App = function(){
-    return <div>
-                <Login />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <InterestList />
-                                </div>
-                                <div className="col-md-12 ">
-                                    <Interest />
-                                </div>
-=======
-=======
 
->>>>>>> master
 class App extends Component {
 
     constructor(){
@@ -51,10 +35,7 @@ class App extends Component {
 
     render() {
         return <div>
-
-                             <Login />
-
-
+                    <Login />
                     <div className="container">
                     <div className="row">
                             <div className="col-md-3">
@@ -65,34 +46,17 @@ class App extends Component {
                                     <div className="col-md-12 ">
                                         <Interest />
                                     </div>
+                                    <div className="col-md-12 ">
+                                        <Filters />
                                     </div>
-<<<<<<< HEAD
->>>>>>> master
-=======
-
->>>>>>> master
-                                </div>
                             <div className="col-md-6">
                                 <Map />
                             </div>
                             <div className="col-md-3">
                                 <Chat setMessage={this.setMessage} messages={this.state.messages}/>
                             </div>
-
-                    </div>
-                    </div>
-                     <div className="row">
-                                    <div className="col-md-12">
-                                <Footer />
+                                </div>
                             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <div className="col-md-6">
-                            <Map />
-                        </div>
-                        <div className="col-md-3">
-                            <Chat />
-                        </div>       
                     </div>
                 </div>
                 <div className="footer">
@@ -103,19 +67,7 @@ class App extends Component {
                     </div>
                 </div>
             </div>;
-=======
-=======
-
->>>>>>> master
-                    </div>
-
-                </div>;
     }
-<<<<<<< HEAD
->>>>>>> master
-=======
-
->>>>>>> master
 }
 
 
