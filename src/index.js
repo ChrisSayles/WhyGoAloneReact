@@ -58,10 +58,10 @@ class App extends Component {
                             <Chat setMessage={this.setMessage} messages={this.state.messages}/>
                     </div>        
                     </div>
-                </div>
-                <div className="footer">
-                    <Footer />
-                </div>
+                    </div>
+                    <div className="footer">
+                        <Footer />
+                    </div>     
             </div>;
     }
 }
