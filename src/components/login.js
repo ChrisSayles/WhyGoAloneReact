@@ -7,9 +7,6 @@ class Login extends Component {
 			
 			<div className="header headerBackground">
 			<div className="navbar navbar-default headerBackground logoArea ">
-				
-
-
 				<div className="pizzaLogo"></div>
 				<div>
 				<button className="loginButton mdl-button mdl-js-button mdl-js-ripple-effect">
