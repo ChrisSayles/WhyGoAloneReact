@@ -38,7 +38,7 @@ class App extends Component {
                     <Login />
                     <div className="container">
                     <div className="row">
-                            <div className="col-md-3">
+                        <div className="col-md-3">
                                 <div className="row">
                                     <div className="col-md-12">
                                         <InterestList />
@@ -49,22 +49,18 @@ class App extends Component {
                                     <div className="col-md-12 ">
                                         <Filters />
                                     </div>
-                            <div className="col-md-6">
-                                <Map />
-                            </div>
-                            <div className="col-md-3">
-                                <Chat setMessage={this.setMessage} messages={this.state.messages}/>
-                            </div>
                                 </div>
-                            </div>
+                        </div>
+                    <div className="col-md-6">
+                                <Map />
+                    </div>
+                    <div className="col-md-3">
+                            <Chat setMessage={this.setMessage} messages={this.state.messages}/>
+                    </div>        
                     </div>
                 </div>
                 <div className="footer">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <Footer />
-                        </div>
-                    </div>
+                    <Footer />
                 </div>
             </div>;
     }
