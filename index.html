@@ -2,36 +2,30 @@
 <html>
 
 <head>
-  <!-- Setting the right viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" href="/style/style.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Spicy+Rice" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <!-- Auth0Lock script -->
-  <script src="//cdn.auth0.com/js/lock-9.0.min.js"></script>
-  <!-- Latest minor release -->
-  <script src="http://cdn.auth0.com/js/lock/10.x/lock.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-  <!-- Latest patch release (recommended for production) -->
-  <script src="http://cdn.auth0.com/js/lock/10.x.y/lock.min.js"></script>
-</head>
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <!--end of google font-->
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--End Material Design Lite -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+     <link rel="stylesheet" href="/style/style.css">
+  </head>
+  <body>
+  <div class="root"></div>
+    <div class="container"></div>
+  </body>
+  <script src="./bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
 
-<body>
-  <div class="container"></div>
-</body>
-<script src="/bundle.js"></script>
-<script>
-  var lock = new Auth0Lock('W42OG1f82ibOZxOw0WJjoBn38ITq3UMg', 'antoniojgage.auth0.com', {
-    auth: {
-      redirectUrl: 'http://localhost:3000/login',
-      responseType: 'code',
-      params: {
-        scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
-      }
-    }
-  });
-</script>
-<button onclick="lock.show();">Login</button>
 </html>

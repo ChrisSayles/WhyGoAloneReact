@@ -4,13 +4,20 @@ class InterestList extends Component {
 	render(){
 		return(
 
-			<div className="panel panel-default panel-border col-sm-12">
-  				<div className="panel-body interestTopTitle">What are you interested in?</div>
-  				<div className="panel-body interestTopList">Bowling</div>
+			<div className="panel panel-default panel-border bottom">
+  					<h4 className="panel-heading heading-area textStyle">
+  						Your Interests 
+  					</h4>
+  					<div className="panel-body interestTopList textStyle">
+
+  				   			
+  					</div>
 			</div>
 			)
 	}
 }
+
+
 
 
 
