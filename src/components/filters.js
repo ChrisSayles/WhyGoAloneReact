@@ -4,9 +4,8 @@ import Slider from './slider';
 class Filters extends Component {
 	render(){
 		return(
-
-		<div className="panel panel-default panel-border" id="btnBox">
-			<h2 className="panel-heading heading-area textStyle">Narrow your search</h2>
+		<div className="panel panel-default panel-border bottom" id="btnBox">
+			<h4 className="panel-heading heading-area textStyle">Narrow your search</h4>
 				<form>
 			        <div className="radio">
 			          <label>
