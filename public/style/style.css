@@ -206,7 +206,7 @@
     position: relative;
   	clear:both;
   	padding-top:20px;
-	
+
 }
 
 .onehun {
@@ -267,4 +267,8 @@ body {
     /* background-color: #cfcfea;*/
     background-image: url("light-pattern.png");
     background-size: 100%
+}
+input {
+    line-height: normal;
+    color: black;
 }
