@@ -19950,8 +19950,9 @@
 	                null,
 	                'Add an Interest:',
 	                _react2.default.createElement('input', {
+	                  value: this.state.term,
 	                  onChange: function onChange(event) {
-	                    return _this2.setState({ term: event.target.value });
+	                    return _this2.onInputChange(event.target.value);
 	                  } }),
 	                _react2.default.createElement('input', { id: 'addInterest', type: 'submit', className: 'btn btn-primary interestButton', value: 'Add' }),
 	                _react2.default.createElement('input', { id: 'addInterest', type: 'submit', className: 'btn btn-primary interestButton', value: this.state.term })
@@ -19961,6 +19962,12 @@
 	          _react2.default.createElement('div', { className: 'currentCount' })
 	        )
 	      );
+	    }
+	  }, {
+	    key: 'onInputChange',
+	    value: function onInputChange(term) {
+	      console.log(this.state.term);
+	      this.setState({ term: term });
 	    }
 	  }]);
 
@@ -19976,7 +19983,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19994,31 +20001,31 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var InterestList = function (_Component) {
-	  _inherits(InterestList, _Component);
+		_inherits(InterestList, _Component);
 
-	  function InterestList() {
-	    _classCallCheck(this, InterestList);
+		function InterestList() {
+			_classCallCheck(this, InterestList);
 
-	    return _possibleConstructorReturn(this, (InterestList.__proto__ || Object.getPrototypeOf(InterestList)).apply(this, arguments));
-	  }
+			return _possibleConstructorReturn(this, (InterestList.__proto__ || Object.getPrototypeOf(InterestList)).apply(this, arguments));
+		}
 
-	  _createClass(InterestList, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "panel panel-default panel-border bottom" },
-	        _react2.default.createElement(
-	          "h4",
-	          { className: "panel-heading heading-area textStyle" },
-	          "Your Interests"
-	        ),
-	        _react2.default.createElement("div", { className: "panel-body interestTopList textStyle" })
-	      );
-	    }
-	  }]);
+		_createClass(InterestList, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "panel panel-default panel-border bottom" },
+					_react2.default.createElement(
+						"h4",
+						{ className: "panel-heading heading-area textStyle" },
+						"Your Interests"
+					),
+					_react2.default.createElement("div", { className: "panel-body interestTopList textStyle" })
+				);
+			}
+		}]);
 
-	  return InterestList;
+		return InterestList;
 	}(_react.Component);
 
 	exports.default = InterestList;

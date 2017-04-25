@@ -6,11 +6,11 @@ class InterestList extends Component {
 
 			<div className="panel panel-default panel-border bottom">
   					<h4 className="panel-heading heading-area textStyle">
-  						Your Interests 
+  						Your Interests
   					</h4>
   					<div className="panel-body interestTopList textStyle">
 
-  				   			
+
   					</div>
 			</div>
 			)
