@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "react-bootstrap-slider": "^1.1.7",
+    "bootstrap": "^3.3.7",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-stormpath": "^3.2.0",

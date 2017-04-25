@@ -4,7 +4,7 @@ class Footer extends Component {
 	render(){
 		return(
 			
-		<div className="footerStyle">
+		<div>
             <div>
                 <a>@ Copyright 2017 whygoalone.com</a>
             </div>
