@@ -17,13 +17,12 @@ class Interest extends Component {
                         <form id="interestForm">
                           <div className="form-group">
                             <label>
-                              Add an interest:
+                              Add an Interest:
                               <input
-                                value={this.state.term}
-                                onChange={event => this.onInputChange(event.target.value)} />
+                                onChange={event => this.setState({term: event.target.value})} />
 
                               <input id="addInterest" type="submit" className="btn btn-primary interestButton" value="Add"/>
-
+                              <input id="addInterest" type="submit" className="btn btn-primary interestButton" value={this.state.term}/>
 
 
                             </label>
@@ -36,11 +35,6 @@ class Interest extends Component {
   );
 }
 
-onInputChange(term) {
-  console.log(this.state.term)
-  this.setState({term});
-  // this.props.onSearchTermChange(term);
-}
 
 }
 

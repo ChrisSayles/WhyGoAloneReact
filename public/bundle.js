@@ -19948,26 +19948,19 @@
 	              _react2.default.createElement(
 	                'label',
 	                null,
-	                'Add an interest:',
+	                'Add an Interest:',
 	                _react2.default.createElement('input', {
-	                  value: this.state.term,
 	                  onChange: function onChange(event) {
-	                    return _this2.onInputChange(event.target.value);
+	                    return _this2.setState({ term: event.target.value });
 	                  } }),
-	                _react2.default.createElement('input', { id: 'addInterest', type: 'submit', className: 'btn btn-primary interestButton', value: 'Add' })
+	                _react2.default.createElement('input', { id: 'addInterest', type: 'submit', className: 'btn btn-primary interestButton', value: 'Add' }),
+	                _react2.default.createElement('input', { id: 'addInterest', type: 'submit', className: 'btn btn-primary interestButton', value: this.state.term })
 	              )
 	            )
 	          ),
 	          _react2.default.createElement('div', { className: 'currentCount' })
 	        )
 	      );
-	    }
-	  }, {
-	    key: 'onInputChange',
-	    value: function onInputChange(term) {
-	      console.log(this.state.term);
-	      this.setState({ term: term });
-	      // this.props.onSearchTermChange(term);
 	    }
 	  }]);
 
