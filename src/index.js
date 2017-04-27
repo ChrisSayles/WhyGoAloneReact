@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import Interest from './components/interest';
 import InterestList from './components/interestList';
 import Login from './components/login';
@@ -11,7 +11,9 @@ import Filters from './components/filters';
 import Slider from './components/slider';
 import helpers from './utils/helpers.js';
 import IntlMixin from 'react-intl';
-import i18nLoader from '../i18n';
+//import i18nLoader from '../i18n';
+//var React = require('react');
+var i18nLoader = require('../i18n');
 
 
 class App extends Component {
@@ -79,8 +81,8 @@ class App extends Component {
 
 function renderApp(i18n) {
 
-var App = require('./index.js');
-ReactDOM.render( <App {...i18n} /> , document.querySelector('.root'));
+  React.render( <App {...i18n}/> , document.querySelector('.root'));
+
 }
 
 var defaultLocale = document.documentElement.getAttribute('lang');
