@@ -10,15 +10,15 @@ import Footer from './components/footer';
 import Filters from './components/filters';
 import Slider from './components/slider';
 import helpers from './utils/helpers.js';
-import IntlMixin from './react-intl';
+import IntlMixin from 'react-intl';
 import i18nLoader from '../i18n';
 
 
-class App extends Component with IntlMixin {
+class App extends Component {
 
     constructor(){
         super();
-
+        Object.assign(this, IntlMixin);
         this.state = {messages: ''};
         this.setMessage = this.setMessage.bind(this);
         this.setLang = this.setLang.bind(this);
@@ -40,6 +40,8 @@ class App extends Component with IntlMixin {
         helpers.fetchMessages().then(function(data){
             this.setState({messages: data});
         }.bind(this));
+
+        i18nLoader(e.target.value, this.setProps, this);
     }
 
     render() {
