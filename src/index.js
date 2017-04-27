@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import Interest from './components/interest';
 import InterestList from './components/interestList';
 import Login from './components/login';
@@ -10,20 +10,31 @@ import Footer from './components/footer';
 import Filters from './components/filters';
 import Slider from './components/slider';
 import helpers from './utils/helpers.js';
+import IntlMixin from 'react-intl';
+//import i18nLoader from '../i18n';
+//var React = require('react');
+var i18nLoader = require('../i18n');
 
 
 class App extends Component {
 
     constructor(){
         super();
-
+        Object.assign(this, IntlMixin);
         this.state = {messages: ''};
         this.setMessage = this.setMessage.bind(this);
+        this.setLang = this.setLang.bind(this);
 
     }
+    //todo: put i18nLoader(e.target.value, this.setProps, this);
+    //inside componentDidUpdate
 
     setMessage(message){
         this.setState({ message: message });
+    }
+
+    setLang(lang) {
+      this.setState({lang: lang});
     }
 
     componentDidUpdate() {
@@ -31,6 +42,8 @@ class App extends Component {
         helpers.fetchMessages().then(function(data){
             this.setState({messages: data});
         }.bind(this));
+
+        i18nLoader(e.target.value, this.setProps, this);
     }
 
     render() {
@@ -66,7 +79,15 @@ class App extends Component {
     }
 }
 
+function renderApp(i18n) {
+
+  React.render( <App {...i18n}/> , document.querySelector('.root'));
+
+}
+
+var defaultLocale = document.documentElement.getAttribute('lang');
+
+i18nLoader(defaultLocale, renderApp);
 
 
 
-ReactDOM.render( < App / > , document.querySelector('.root'));

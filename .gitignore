@@ -1,2 +1,8 @@
 node_modules
 npm-debug.log
+public/1.zh-intl.js
+public/2.en-intl.js
+public/2.zh-without-intl.js
+public/3.en-intl.js
+public/4.en-without-intl.js
+public/5.intl-shim.js
