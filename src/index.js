@@ -11,8 +11,7 @@ import Filters from './components/filters';
 import Slider from './components/slider';
 import helpers from './utils/helpers.js';
 import IntlMixin from 'react-intl';
-//import i18nLoader from '../i18n';
-var i18nLoader = require('../i18n');
+import i18nLoader from '../i18n';
 
 
 class App extends Component {
@@ -20,19 +19,17 @@ class App extends Component {
     constructor(){
         super();
         Object.assign(this, IntlMixin);
+
         this.state = {messages: ''};
         this.setMessage = this.setMessage.bind(this);
-        this.setLang = this.setLang.bind(this);
 
     }
-    //todo: put i18nLoader(e.target.value, this.setProps, this);
-    //inside componentDidUpdate
 
     setMessage(message){
         this.setState({ message: message });
     }
 
-    setLang(lang) {
+     setLang(lang) {
       this.setState({lang: lang});
     }
 
@@ -41,8 +38,7 @@ class App extends Component {
         helpers.fetchMessages().then(function(data){
             this.setState({messages: data});
         }.bind(this));
-
-        i18nLoader(e.target.value, this.setProps, this);
+        i18nLoader(e.target.value, this.setProps, this)        
     }
 
     render() {
@@ -78,15 +74,17 @@ class App extends Component {
     }
 }
 
+
+
+
 function renderApp(i18n) {
 
-  ReactDOM.render( <App {...i18n}/> , document.querySelector('.root'));
+ ReactDOM.render( <App {...i18n}/> , document.querySelector('.root'));
 
 }
+//set default language to english
+var defaultLocale = 'en';
+console.log(defaultLocale);
 
-var defaultLocale = document.documentElement.getAttribute('lang');
 
 i18nLoader(defaultLocale, renderApp);
-
-
-

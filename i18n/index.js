@@ -43,8 +43,8 @@ module.exports = function(locale, cb, scope) {
   if(!hasIntl)
     require.ensure(['intl/Intl'], function (require) {
       require('intl/Intl');
-      //loaders[locale](cb, scope);
+      loaders[locale](cb, scope);
     }, 'intl-shim');
- // else
-    //loaders[locale](cb, scope);
+  else
+    loaders[locale](cb, scope);
 };

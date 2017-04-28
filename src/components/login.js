@@ -18,7 +18,7 @@ class Login extends Component {
   				<i className="material-icons iconSize loginButton">account_circle</i>Sign-in with Google
 				</button>
 				</div>
-				<div>
+				<div className="languageSelector">
 					<select onChange={this.handleLocaleChange}>
 						<option value="en">English</option>
 						<option value="zh">Chinese</option>

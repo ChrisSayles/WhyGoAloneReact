@@ -1,7 +1,7 @@
 module.exports = {
   locales: ['en'],
   messages: {
-    hello: "Hello, world!",
+    chat: "Hello, world!",
     lastName: "Last Name",
     firstName: "First Name"
   }
