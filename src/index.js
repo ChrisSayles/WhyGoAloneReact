@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import Interest from './components/interest';
 import InterestList from './components/interestList';
 import Login from './components/login';
@@ -12,7 +12,6 @@ import Slider from './components/slider';
 import helpers from './utils/helpers.js';
 import IntlMixin from 'react-intl';
 //import i18nLoader from '../i18n';
-//var React = require('react');
 var i18nLoader = require('../i18n');
 
 
@@ -81,7 +80,7 @@ class App extends Component {
 
 function renderApp(i18n) {
 
-  React.render( <App {...i18n}/> , document.querySelector('.root'));
+  ReactDOM.render( <App {...i18n}/> , document.querySelector('.root'));
 
 }
 
