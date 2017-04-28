@@ -10,12 +10,15 @@ import Footer from './components/footer';
 import Filters from './components/filters';
 import Slider from './components/slider';
 import helpers from './utils/helpers.js';
+import IntlMixin from 'react-intl';
+import i18nLoader from '../i18n';
 
 
 class App extends Component {
 
     constructor(){
         super();
+        Object.assign(this, IntlMixin);
 
         this.state = {messages: ''};
         this.setMessage = this.setMessage.bind(this);
@@ -26,11 +29,16 @@ class App extends Component {
         this.setState({ message: message });
     }
 
+     setLang(lang) {
+      this.setState({lang: lang});
+    }
+
     componentDidUpdate() {
         console.log('component did indeed update');
         helpers.fetchMessages().then(function(data){
             this.setState({messages: data});
         }.bind(this));
+        i18nLoader(e.target.value, this.setProps, this)        
     }
 
     render() {
@@ -69,4 +77,14 @@ class App extends Component {
 
 
 
-ReactDOM.render( < App / > , document.querySelector('.root'));
+function renderApp(i18n) {
+
+ ReactDOM.render( <App {...i18n}/> , document.querySelector('.root'));
+
+}
+//set default language to english
+var defaultLocale = 'en';
+console.log(defaultLocale);
+
+
+i18nLoader(defaultLocale, renderApp);

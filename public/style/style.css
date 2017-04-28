@@ -243,6 +243,12 @@
     background: rgba(254, 93, 38, 0.7);
 }
 
+.languageSelector{
+    width: 25px;
+    position: absolute;
+    right: 5%;
+}
+
 a {
     color: white;
 }
